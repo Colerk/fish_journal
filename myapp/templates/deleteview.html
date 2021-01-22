@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<html lang="en">
+<style>
+
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+</style>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name = 'viewport' content='with=device-width, intial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Fish Journal</title>
+</head>
+
+<body>
+
+  {% include "./navbar.html" %}
+
+
+<form method="POST"> 
+    <!-- Security token by Django -->
+    {% csrf_token %} 
+    Are you want to delete this item ? 
+    <input type="submit" value="Yes" /> 
+    <a href="/">Cancel </a> 
+</form> 
