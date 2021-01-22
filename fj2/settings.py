@@ -26,9 +26,9 @@ SEC_KEY = os.environ.get('SEC_KEY')
 SECRET_KEY = SEC_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fish-journal.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
