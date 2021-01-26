@@ -1,1 +1,1 @@
-web: gunicorn Fish_Journal.wsgi
+web: gunicorn fj2.wsgi
